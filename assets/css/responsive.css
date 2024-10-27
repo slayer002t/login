@@ -1,0 +1,267 @@
+@media (min-width: 1034px) {
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1033px) {
+  .header__navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .header__navbar .header__navbar--list ul li {
+    margin: 0 10px;
+  }
+
+  .header__navbar .header__navbar--logo .header__navbar--logo-img {
+    margin-left: 0px;
+  }
+
+  .header__navbar .header__navbar--login {
+    margin-right: 0px;
+  }
+
+  .header__search-content {
+    width: 100%;
+  }
+
+  .header__search-content--p {
+    padding: 15px;
+    justify-content: space-around;
+  }
+
+  .header__search-content--p-title {
+    font-size: 40px;
+  }
+
+  .header__search-content-form {
+    width: 100%;
+    height: 50px;
+  }
+
+  .header__search-content-form--btn {
+    font-size: 15px;
+    width: 85px;
+    line-height: 0em;
+    height: 40px;
+  }
+
+  .header__search-form--input {
+    font-size: 85%;
+  }
+
+  .header__search-content--img {
+    width: 50%;
+  }
+
+  .header__search-content--img .header__search-img {
+    width: 100%;
+    height: 100%;
+  }
+  /* List */
+
+  .list {
+    margin-top: 0px;
+  }
+
+  .list-contain {
+    width: 100%;
+  }
+
+  .container-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .list-type__content {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 8%;
+  }
+
+  .list-type__header h2 {
+    font-size: 3rem;
+  }
+
+  .header__search-content--p {
+    margin-left: 15px;
+  }
+
+  .header__search-content--p-title {
+    font-size: 3rem;
+  }
+
+  .container-img .container-img__content {
+    bottom: -24%;
+    left: -4%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 740px) {
+  .header__navbar {
+    flex-direction: column;
+    position: relative;
+    .header__navbar--list {
+      background-color: rgb(60, 87, 236);
+    }
+  }
+
+  .header__navbar--list {
+    width: 40%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+  }
+
+  /* .header__navbar--list:hover .header__navbar--list ul {
+    display: contents;
+  } */
+
+  .header__navbar .header__navbar--login {
+    margin-right: 0px;
+    position: absolute;
+    /* bottom: 0; */
+    top: 17%;
+    right: 0;
+    width: 30%;
+  }
+
+  .header__navbar--logo {
+    text-align: center;
+  }
+
+  .header__navbar .header__navbar--logo .header__navbar--logo-img {
+    margin-left: 0px;
+  }
+
+  .icon-mobile {
+    display: block;
+    padding: 15px 15px;
+    font-size: 25px;
+  }
+
+  .header__navbar--list:hover .icon-mobile {
+    background-color: yellow;
+  }
+
+  .header__navbar .header__navbar--list ul {
+    display: contents;
+    /* display: none; */
+  }
+
+  .header__search-content {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .header__search-content--p {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .header__search-content--img {
+    width: 100%;
+  }
+
+  .header__search-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .header__search-content--p-title {
+    font-size: 4.2rem;
+  }
+
+  .header__search--p-p {
+    font-size: 1.8rem;
+  }
+
+  .header__search-content-form--btn {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+
+  .container__categories--list ul li {
+    line-height: 2rem;
+    font-size: 15px;
+  }
+
+  .list {
+    margin-top: 0px;
+  }
+
+  .list-type__content {
+    padding-bottom: 30%;
+  }
+
+  .list-type__header h2 {
+    font-size: 3rem;
+    width: 60%;
+  }
+
+  .view-more {
+    padding: 10px 10px;
+  }
+
+  .view-more a {
+    font-size: 1.5rem;
+  }
+
+  .list-type__content {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 45% 45%;
+    gap: 10%;
+  }
+
+  .footer-header__title h2 {
+    font-size: 3.2rem;
+  }
+
+  .footer-header .footer-header__search .header__search-content-form {
+    width: 100%;
+  }
+
+  .footer-main {
+    flex-direction: column;
+  }
+
+  .footer-main__content {
+    padding-top: 100px;
+  }
+
+  .footer-main__content {
+    font-size: 15px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-main__content .footer_gap {
+    margin: 10% 0;
+  }
+
+  .footer-main__content--list {
+    margin: 1% 0px;
+  }
+
+  .footer-main__content h3 {
+    text-align: center;
+  }
+
+  .footer-header__search .header__search-content-form--btn {
+    font-size: 13px;
+    width: 120px;
+  }
+
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-size: 80%;
+  }
+}

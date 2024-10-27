@@ -1,0 +1,218 @@
+:root {
+  --fist-color: rgba(98, 85, 164, 1);
+  --second-color: rgb(127, 241, 171);
+  --text-color: #fff;
+  --third-color: #0d001e;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  text-transform: none;
+  background-color: #fff;
+  background-image: none;
+  background-size: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.grid {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: rgba(98, 85, 164, 1);
+}
+
+@keyframes fist-animation {
+  0% {
+    opacity: 0;
+    scale: 1;
+  }
+  100% {
+    opacity: 1;
+    scale: 1.1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-zoom {
+  0% {
+    opacity: 0;
+    scale: 0.3;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* View more btn */
+
+.view-more {
+  padding: 20px 22px;
+  transition: all 0.3s ease-in-out;
+}
+
+.view-more a {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1em;
+  font-weight: 500;
+  padding-bottom: 15px;
+  color: rgba(13, 0, 30, 1);
+  border-bottom: 1px solid rgba(13, 0, 30, 1);
+}
+
+.view-more:hover {
+  scale: 1.1;
+}
+
+.view-more:hover a {
+  color: var(--fist-color);
+}
+
+.view-more a i {
+  margin-left: 5px;
+  transform: rotate(-45deg);
+}
+
+/* Css animation with js */
+
+.item.visible {
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.item img {
+  opacity: 0;
+}
+
+.item.visible .zoom {
+  opacity: 1;
+  animation: fade-zoom 1.25s ease-in-out;
+}
+
+.item.visible .left {
+  opacity: 1;
+  animation: fade-left 1.25s ease-in-out;
+}
+
+.item.visible .right {
+  opacity: 1;
+  animation: fade-right 1.25s ease-in-out;
+}
+
+.item.fade-in-up {
+  opacity: 0;
+}
+
+.item.fade-in-up.visible {
+  opacity: 1;
+  animation-name: fade-up;
+}
+
+.item.fade-in-up.visible img {
+  opacity: 1;
+}
+
+.item.fade-in-left {
+  opacity: 0;
+}
+
+.item.fade-in-left.visible {
+  opacity: 1;
+  animation-name: fade-left;
+}
+
+.item.fade-in-left.visible img {
+  opacity: 1;
+}
+
+.item.fade-in-right {
+  opacity: 0;
+}
+
+.item.fade-in-right.visible {
+  opacity: 1;
+  animation-name: fade-right;
+}
+
+.item.fade-in-right.visible img {
+  opacity: 1;
+}
+
+.item.fade-in-down {
+  opacity: 0;
+}
+
+.item.fade-in-down.visible {
+  opacity: 1;
+  animation-name: fade-down;
+}
+
+.item.fade-in-zoom {
+  opacity: 0;
+}
+
+.item.fade-in-zoom.visible {
+  opacity: 1;
+  animation-name: fade-zoom;
+}
+
+.item.fade-in-zoom.visible img {
+  opacity: 1;
+}
